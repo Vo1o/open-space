@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+}
+
+.space {
+    background-image: url("https://stepik.org/media/attachments/lesson/452681/space.png");
+    background-position: center;
+}
+
+.planet-area {
+    height: 100vh;
+    width: 80vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.planet {
+    position: absolute;
+    height: 50vh;
+    left: 0;
+    bottom: 0;
+}
+
+.rocket {
+    position: relative;
+    height: 25vh;
+    bottom: -50vh;
+    left: 0;
+    transform: rotate(20deg);
+}
+
+.control-panel {
+    position: fixed;
+    bottom: 200px;
+    right: 355px;
+    padding: 18px;
+    text-align: center;
+    background:
+            linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+            linear-gradient(63deg, transparent 74%, #999 78%),
+            linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+            #444;
+    background-size: 16px 48px;
+}
+
+.control-panel__inner {
+    background:
+            radial-gradient(black 15%, transparent 16%) 0 0,
+            radial-gradient(black 15%, transparent 16%) 8px 8px,
+            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+}
+
+input[placeholder] {
+    margin-bottom: 37px;
+    margin-left: 6%;
+}
+
+input[type=password] {
+    background-color: #333333;
+    border-color: yellow;
+    color: yellow;
+    border-radius: 5px;
+    margin-top: 18px;
+}
+
+input[value=OK] {
+    background-color: yellow;
+    border-radius: 7px;
+}
+
+.check-buttons {
+    display: flex;
+    align-items: center;
+    width: inherit;
+    justify-content: space-evenly;
+}
+
+.levers {
+    display: flex;
+    width: inherit;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.lever {
+    transform: rotate(-90deg);
+    width: 100px;
+}
+
+.launch {
+    background-color: red;
+    font-size: 20px;
+    border-color: white;
+    border-radius: 20px;
+    color: #fff;
+    margin-left: 7%;
+    margin-top: 60px;
+    width: 80px;
+    height: 40px;
+}
